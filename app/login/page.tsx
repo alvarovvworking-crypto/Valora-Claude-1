@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { Zap, Mail, Lock, ArrowRight } from "lucide-react";
 
-export default function LoginPage() {
+export 
+default function LoginPage() {
   const router = useRouter();
   const supabase = createClient();
   const [email, setEmail] = useState("");
@@ -88,7 +89,7 @@ function traducirError(msg: string) {
   return msg;
 }
 
-export function AuthShell({ children }: { children: React.ReactNode }) {
+function AuthShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex items-center justify-center px-6">
       <div className="w-full max-w-md">
@@ -106,7 +107,7 @@ export function AuthShell({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function Field({
+function Field({
   icon,
   type,
   placeholder,
@@ -134,7 +135,7 @@ export function Field({
   );
 }
 
-export function GoogleIcon() {
+function GoogleIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24">
       <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
