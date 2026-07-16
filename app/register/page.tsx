@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { AuthShell, Field, GoogleIcon } from "@/app/login/page";
+import { AuthShell, Field, GoogleIcon } from "@/components/auth";
 import { Mail, Lock, User, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function RegisterPage() {
